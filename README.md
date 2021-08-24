@@ -48,3 +48,7 @@
 ### (7) Install Styled components Library
 
     npm i --save styled-components
+
+### (8) Install React Router
+
+    npm i react-router-dom
