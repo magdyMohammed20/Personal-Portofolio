@@ -52,3 +52,7 @@
 ### (8) Install React Router
 
     npm i react-router-dom
+
+### (9) Install FontAwesome
+
+    npm install --save font-awesome
