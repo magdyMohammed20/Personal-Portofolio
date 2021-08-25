@@ -1,5 +1,5 @@
 import React , {useState} from 'react'
-import {BrowserRouter , Route , Link} from 'react-router-dom'
+import {BrowserRouter , Route , Link, Switch} from 'react-router-dom'
 import Home from '../../pages/home/Home'
 import About from '../../pages/about/About'
 import Skills from '../../pages/skills/Skills'
@@ -43,12 +43,14 @@ function Router() {
                     </ul>
                 </nav>
 
-                <Route exact path='/' component={Home}/>
-                <Route path='/about' component={About}/>
-                <Route path='/skills' component={Skills}/>
-                <Route path='/services' component={Services}/>
-                <Route path='/portofolio' component={Portofolio}/>
-                <Route path='/contact' component={Contact}/>
+                <Switch>
+                    <Route exact path='/'><Home/></Route>
+                    <Route path='/about'><About/></Route>
+                    <Route path='/skills'><Skills/></Route>
+                    <Route path='/services'><Services/></Route>
+                    <Route path='/portofolio'><Portofolio/></Route>
+                    <Route path='/contact'><Contact/></Route>
+                </Switch>
 
                 <button className='absolute' onClick={() => toggleNav()}>
                     <i className="fa fa-bars text-white" aria-hidden="true"></i>
