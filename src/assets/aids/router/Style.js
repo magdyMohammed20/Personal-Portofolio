@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const mainColor = '#2B2C2F';
+const mainColor = '#111827';
 const secondColor = '#FB839E';
 
 export const RouterParent = styled.div`
@@ -35,7 +35,7 @@ export const RouterParent = styled.div`
         }
     }
 
-    button{
+    .humb{
         z-index: 998;
         right: 15px;
         top: 15px;
@@ -43,11 +43,6 @@ export const RouterParent = styled.div`
         border-radius: 100%;
         width: 50px;
         height: 50px;
-
-    }
-
-    .overlay{
-
     }
 `
 
