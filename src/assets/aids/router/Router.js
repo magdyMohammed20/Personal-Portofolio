@@ -53,7 +53,7 @@ function Router() {
                 </Switch>
 
                 <button className='absolute humb' onClick={() => toggleNav()}>
-                    <i className="fa fa-bars text-white" aria-hidden="true"></i>
+                    <i className="fa fa-bars text-black" aria-hidden="true"></i>
                 </button>
 
                 <Overlay className={overlay ? 'block' : 'hidden' }></Overlay>

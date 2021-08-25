@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const mainColor = '#111827';
-const secondColor = '#FB839E';
+const secondColor = '#cdb78e';
 
 export const RouterParent = styled.div`
 
@@ -11,6 +11,7 @@ export const RouterParent = styled.div`
         bottom: 0;
         background-color: ${mainColor};
         width: 250px; 
+        border-right: 3px solid ${secondColor};
         position: absolute;
         z-index: 999;
         transition: all .4s ease;
@@ -20,17 +21,35 @@ export const RouterParent = styled.div`
         }
     
         ul{
-            height: 100%
+            height: 100%;
         }
     
         a{
             display: block;
             padding: 14px 12px;
             color: #FFF;
-            transition: all .3s linear;
-    
+            position: relative;
+            z-index: 2;
+            transition: all .2s linear;
+            &::after{
+                content: '';
+                position: absolute;
+                left: -100%;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: ${secondColor};
+                z-index: -1;
+                transition: all .2s linear;
+            }
+            
+            &:hover::after{
+                left: 0
+            }
+
             &:hover{
-                background-color: #111
+                color: ${mainColor};
+                padding-left: 20px !important;
             }
         }
     }
@@ -39,7 +58,7 @@ export const RouterParent = styled.div`
         z-index: 998;
         right: 15px;
         top: 15px;
-        background: ${mainColor};
+        background-color: ${secondColor};
         border-radius: 100%;
         width: 50px;
         height: 50px;
