@@ -16,7 +16,7 @@ export const Div = styled.div`
     a{
         top: 50%;
         left: 50%;
-        transform: translate(-50%) scale(0);
+        transform: translate(-50% , -50%) scale(0);
         background-color: ${mainColor2};
         z-index: 11;
         transition: all .2s linear;
@@ -40,7 +40,7 @@ export const Div = styled.div`
     }
 
     &:hover > a{
-        transform: translate(-50%) scale(1);
+        transform: translate(-50% , -50%) scale(1);
     }
 `;
 
