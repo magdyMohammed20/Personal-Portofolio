@@ -37,7 +37,7 @@ function Router() {
                         <li><Link to='/'>home</Link></li>
                         <li><Link to='/about'>about</Link></li>
                         <li><Link to='/skills'>skills</Link></li>
-                        <li><Link to='/services'>services</Link></li>
+                        {/*<li><Link to='/services'>services</Link></li>*/}
                         <li><Link to='/portofolio'>portofolio</Link></li>
                         <li><Link to='/contact'>contact</Link></li>
                     </ul>
@@ -47,7 +47,7 @@ function Router() {
                     <Route exact path='/'><Home/></Route>
                     <Route path='/about'><About/></Route>
                     <Route path='/skills'><Skills/></Route>
-                    <Route path='/services'><Services/></Route>
+                    {/* <Route path='/services'><Services/></Route> */}
                     <Route path='/portofolio'><Portofolio/></Route>
                     <Route path='/contact'><Contact/></Route>
                 </Switch>
