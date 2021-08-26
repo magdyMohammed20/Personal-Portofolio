@@ -4,7 +4,6 @@ const mainColor = '#111827';
 const mainColor2 = '#cdb78e';
 
 export const PortofolioSection = styled.div`
-    height: 100vh;
     background-color: ${mainColor}
 `;
 
