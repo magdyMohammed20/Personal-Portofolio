@@ -12,7 +12,7 @@ export const RouterParent = styled.div`
         background-color: ${mainColor};
         width: 250px; 
         border-right: 3px solid ${secondColor};
-        position: absolute;
+        position: fixed;
         z-index: 999;
         transition: all .4s ease;
 
@@ -66,7 +66,7 @@ export const RouterParent = styled.div`
 `
 
 export const Overlay = styled.div`
-    position: absolute;
+    position: fixed;
     background-color: rgba(0,0,0,.5);
     top: 0; 
     right: 0;

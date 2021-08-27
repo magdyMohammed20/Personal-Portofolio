@@ -52,7 +52,7 @@ function Router() {
                     <Route path='/contact'><Contact/></Route>
                 </Switch>
 
-                <button className='absolute humb' onClick={() => toggleNav()}>
+                <button className='fixed humb' onClick={() => toggleNav()}>
                     <i className="fa fa-bars text-black" aria-hidden="true"></i>
                 </button>
 
