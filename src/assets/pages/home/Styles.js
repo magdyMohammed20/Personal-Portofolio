@@ -1,13 +1,15 @@
 import styled from 'styled-components'
-import homeBack from '../../images/Home/home.jpg'
+import home from '../../images/Home/home4.jpg'
+
 
 const mainColor = '#111827';
 const secondColor = '#FB839E';
 
 export const HomeSection = styled.div`
-    background-image: url(${homeBack});
+    
     z-index: 2;
-
+    background-image: url(${home});
+    
     &::after{
         content: '';
         position: absolute;
