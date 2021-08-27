@@ -46,7 +46,7 @@ function Skills() {
                     <SkillTemp src={styledComp} skillName={'STYLED-COMPONENTS'} opClass='w-12' opWidth={'col-span-2'}/>
 
                     <H1 className='text-2xl text-white col-span-7 mt-6'>Tools 🛠️</H1>
-                    <SkillTemp src={gulp} skillName={'GULPJS'} opClass='w-8'/>
+                    <SkillTemp src={gulp} skillName={'GULPJS'} opClass=''/>
                     <SkillTemp src={npm} skillName={'NPM'} opClass='w-16'/>
                     <SkillTemp src={git} skillName={'GIT'} opClass='w-12'/>
                     <SkillTemp src={prettier} skillName={'PRETTIER'} opClass='w-12'/>
