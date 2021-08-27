@@ -14,6 +14,28 @@ export const Div = styled.div`
     &:hover{
         background-color: ${mainColor2}
     }
+
+    &:hover > img{
+        animation: pulse .6s ease;
+    }
+
+    @keyframes pulse{
+        0%{
+            transform: scale(1)
+        }
+        30%{
+            transform: scale(1.3)
+        }
+        60%{
+            transform: scale(1)
+        }
+        80%{
+            transform: scale(1.3)
+        }
+        100%{
+            transform: scale(1)
+        }
+    }
 `;
 
 export const H1 = styled.h1`
