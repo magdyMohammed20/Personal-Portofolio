@@ -11,7 +11,7 @@ import TheEvent from '../../images/Portofolio/TheEvent.PNG'
 function Portofolio() {
     return (
         <PortofolioSection className='p-8 h-auto'>
-            <div className='container px-6 mt-8'>
+            <div className='container px-6 mt-8 mx-auto'>
                 <div className='text-center'>
                     <h2 className='text-3xl text-white font-bold'>LATEST WORKS</h2>
                 </div>
