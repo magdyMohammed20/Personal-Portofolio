@@ -11,7 +11,7 @@ function Home() {
                             <span className='text-gray-400'>Hellow</span>
                             <h1 className='text-3xl sm:text-5xl my-6 text-white font-bold'>Magdy Mohammed</h1>
                             <h3 className='text-1xl sm:text-2xl mt-5 mb-6 text-white'>Front End Developer</h3>
-                            <AboutBtn className='rounded about-btn py-3 px-4 shadow-md'>More About Me</AboutBtn>
+                            <AboutBtn className='rounded about-btn py-3 px-4 shadow-md inline-block' to='/about'>More About Me</AboutBtn>
                         </div>
                     </div>
                     <div className='flex justify-center items-center hidden lg:flex'>

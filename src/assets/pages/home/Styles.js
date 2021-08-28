@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import home from '../../images/Home/home4.jpg'
-
+import {Link } from 'react-router-dom'
 
 const mainColor = '#111827';
 const secondColor = '#FB839E';
@@ -22,7 +22,7 @@ export const HomeSection = styled.div`
     }
 `;
 
-export const AboutBtn = styled.button`
+export const AboutBtn = styled(Link)`
     background-color: ${mainColor};
     color: ${secondColor};
     transition: all .4s linear;

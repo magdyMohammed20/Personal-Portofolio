@@ -14,10 +14,10 @@ function About() {
                     <div className='flex justify-center hidden lg:flex flex-col mt-8'>
                         <img src={myImg} className='mx-auto rounded-lg' alt={myImg}/>
                         <ul className='flex justify-center mt-8'>
-                            <li className='mx-3'><Anchor href='#' className='shadow bg-gray-800 w-12 h-12 flex items-center justify-center rounded-full'><i className="fa fa-facebook text-white" aria-hidden="true"></i></Anchor></li>
-                            <li className='mx-3'><Anchor href='#' className='shadow bg-gray-800 w-12 h-12 flex items-center justify-center rounded-full'><i className="fa fa-twitter text-white" aria-hidden="true"></i></Anchor></li>
-                            <li className='mx-3'><Anchor href='#' className='shadow bg-gray-800 w-12 h-12 flex items-center justify-center rounded-full'><i className="fa fa-instagram text-white" aria-hidden="true"></i></Anchor></li>
-                            <li className='mx-3'><Anchor href='#' className='shadow bg-gray-800 w-12 h-12 flex items-center justify-center rounded-full'><i className="fa fa-github-alt text-white" aria-hidden="true"></i></Anchor></li>
+                            <li className='mx-3'><Anchor href='https://www.facebook.com/profile.php?id=100002594931715' target='_blank' className='shadow bg-gray-800 w-12 h-12 flex items-center justify-center rounded-full'><i className="fa fa-facebook text-white" aria-hidden="true"></i></Anchor></li>
+                            <li className='mx-3'><Anchor href='https://twitter.com/magdymo26260007' target='_blank' className='shadow bg-gray-800 w-12 h-12 flex items-center justify-center rounded-full'><i className="fa fa-twitter text-white" aria-hidden="true"></i></Anchor></li>
+                            <li className='mx-3'><Anchor href='https://www.instagram.com/magdyMohammed20/' target='_blank' className='shadow bg-gray-800 w-12 h-12 flex items-center justify-center rounded-full'><i className="fa fa-instagram text-white" aria-hidden="true"></i></Anchor></li>
+                            <li className='mx-3'><Anchor href='https://github.com/magdyMohammed20' target='_blank' className='shadow bg-gray-800 w-12 h-12 flex items-center justify-center rounded-full'><i className="fa fa-github-alt text-white" aria-hidden="true"></i></Anchor></li>
                         </ul>
 
                     </div>
@@ -27,8 +27,8 @@ function About() {
                         I have excellent design & coding skills, as well as an ability to convert requirements into exciting online applications.
                         </p>
                         <div className='mt-8'>
-                            <Btn className='rounded about-btn py-3 px-4 shadow-md mr-4'>Download CV</Btn>
-                            <Btn className='rounded about-btn py-3 px-4 shadow-md'>Hire Me</Btn>
+                            <Btn className='rounded about-btn py-3 px-4 shadow-md mr-4 inline-block' href='https://www.mediafire.com/file/asv2qa99c1r0lm9/Magdy_Mohammed_Abd_El-hamid_CV.pdf/file' target='black' download>Download CV</Btn>
+                            <Btn className='rounded about-btn py-3 px-4 shadow-md inline-block' href='https://mostaql.com/u/Magdy_Mo10' target='_blank'>Hire Me</Btn>
                         </div>
                     </div>
 

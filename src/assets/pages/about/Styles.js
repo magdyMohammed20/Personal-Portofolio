@@ -38,7 +38,7 @@ export const Anchor = styled.a`
    }
 `;
 
-export const Btn = styled.button`
+export const Btn = styled.a`
     background-color: ${mainColor2};
     color: ${secondColor};
     transition: all .4s linear;
