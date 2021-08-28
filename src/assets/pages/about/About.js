@@ -12,7 +12,7 @@ function About() {
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-2">
                     <div className='flex justify-center hidden lg:flex flex-col mt-8'>
-                        <img src={myImg} className='mx-auto rounded-lg'/>
+                        <img src={myImg} className='mx-auto rounded-lg' alt={myImg}/>
                         <ul className='flex justify-center mt-8'>
                             <li className='mx-3'><Anchor href='#' className='shadow bg-gray-800 w-12 h-12 flex items-center justify-center rounded-full'><i className="fa fa-facebook text-white" aria-hidden="true"></i></Anchor></li>
                             <li className='mx-3'><Anchor href='#' className='shadow bg-gray-800 w-12 h-12 flex items-center justify-center rounded-full'><i className="fa fa-twitter text-white" aria-hidden="true"></i></Anchor></li>

@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 const mainColor = '#111827';
-const mainColor2 = '#050b19';
 const secondColor = '#FB839E';
 
 
