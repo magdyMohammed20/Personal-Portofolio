@@ -5,7 +5,6 @@ const mainColor2 = '#050b19';
 const secondColor = '#cdb78e';
 
 export const SkillsSection = styled.div`
-    height: 100vh;
     background-color: ${mainColor}
 `;
 

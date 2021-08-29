@@ -23,37 +23,41 @@ import github from '../../images/skills/github.png'
 function Skills() {
     return (
         <SkillsSection className='p-8'>
-            <div className='container px-6'>
+            <div className='container px-6 mx-auto'>
                 <div className='text-center'>
                     <h2 className='text-3xl text-white font-bold'>MY SKILLS</h2>
                 </div>
 
                 
-                <div className="grid grid-cols-7">
-                    <H1 className='text-2xl text-white col-span-7 font-bold'>Programming Languages 🌐</H1>
-                    <SkillTemp src={html} skillName={'HTML'} opClass='w-12'/>
-                    <SkillTemp src={css} skillName={'CSS'} opClass='w-12'/>
-                    <SkillTemp src={js} skillName={'Js'} opClass='w-12'/>
-                    <SkillTemp src={bootstrap} skillName={'BOOTSTRAP'} opClass='w-12'/>
-                    <SkillTemp src={pug} skillName={'PUGJS'} opClass='w-12'/>
-                    <SkillTemp src={sass} skillName={'SASS'} opClass='w-12'/>
-                    <SkillTemp src={react} skillName={'REACTJS'} opClass='w-12'/>
-                    <SkillTemp src={formik} skillName={'FORMIK'} opClass='w-12'/>
-                    <SkillTemp src={tailwind} skillName={'TAILWIND'} opClass='w-16'/>
-                    <SkillTemp src={redux} skillName={'REDUX'} opClass='w-12'/>
-                    <SkillTemp src={storybook} skillName={'STORYBOOK'} opClass='w-12'/>
-                    <SkillTemp src={reactTable} skillName={'REACT TABLE'} opClass='w-12'/>
-                    <SkillTemp src={styledComp} skillName={'STYLED-COMPONENTS'} opClass='w-12' opWidth={'col-span-2'}/>
+                
+                    <H1 className='text-2xl text-white col-span-7 font-bold mt-6'>Programming Languages 🌐</H1>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-7'>
+                        <SkillTemp src={html} skillName={'HTML'} opClass='w-12'/>
+                        <SkillTemp src={css} skillName={'CSS'} opClass='w-12'/>
+                        <SkillTemp src={js} skillName={'Js'} opClass='w-12'/>
+                        <SkillTemp src={bootstrap} skillName={'BOOTSTRAP'} opClass='w-12'/>
+                        <SkillTemp src={pug} skillName={'PUGJS'} opClass='w-12'/>
+                        <SkillTemp src={sass} skillName={'SASS'} opClass='w-12'/>
+                        <SkillTemp src={react} skillName={'REACTJS'} opClass='w-12'/>
+                        <SkillTemp src={formik} skillName={'FORMIK'} opClass='w-12'/>
+                        <SkillTemp src={tailwind} skillName={'TAILWIND'} opClass='w-16'/>
+                        <SkillTemp src={redux} skillName={'REDUX'} opClass='w-12'/>
+                        <SkillTemp src={storybook} skillName={'STORYBOOK'} opClass='w-12'/>
+                        <SkillTemp src={reactTable} skillName={'REACT TABLE'} opClass='w-12'/>
+                        <SkillTemp src={styledComp} skillName={'STYLED-COMPONENTS'} opClass='w-12' opWidth={'col-span-1 lg:col-span-2'}/>
+                    </div>
 
-                    <H1 className='text-2xl text-white col-span-7 mt-6'>Tools 🛠️</H1>
-                    <SkillTemp src={gulp} skillName={'GULPJS'} opClass=''/>
-                    <SkillTemp src={npm} skillName={'NPM'} opClass='w-16'/>
-                    <SkillTemp src={git} skillName={'GIT'} opClass='w-12'/>
-                    <SkillTemp src={prettier} skillName={'PRETTIER'} opClass='w-12'/>
-                    <SkillTemp src={eslint} skillName={'ESLINT'} opClass='w-12'/>
-                    <SkillTemp src={github} skillName={'GITHUB'} opClass='w-12'/>
+                    <H1 className='text-2xl text-white col-span-7 mt-11 font-bold'>Tools 🛠️</H1>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7'>
+                        <SkillTemp src={gulp} skillName={'GULPJS'} opClass=''/>
+                        <SkillTemp src={npm} skillName={'NPM'} opClass='w-16'/>
+                        <SkillTemp src={git} skillName={'GIT'} opClass='w-12'/>
+                        <SkillTemp src={prettier} skillName={'PRETTIER'} opClass='w-12'/>
+                        <SkillTemp src={eslint} skillName={'ESLINT'} opClass='w-12'/>
+                        <SkillTemp src={github} skillName={'GITHUB'} opClass='w-12'/>
+                    </div>
 
-                </div>
+                
             </div>
         </SkillsSection>
     )
