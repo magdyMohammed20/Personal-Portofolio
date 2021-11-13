@@ -20,7 +20,7 @@ function Portofolio() {
                         <PortoTemp src={Education} desc='Educational Template' link='https://educational-template.vercel.app/'/>
                         <PortoTemp src={NewEvent} desc='Event Template' link='https://events-template.vercel.app/'/>
                         <PortoTemp src={Tailwind} desc='Tailwind Template' link='https://tailwind-react-template.vercel.app/'/>
-                        <PortoTemp src={TheEvent} desc='Tailwind Template' link='https://application-on-bootstrap-4.vercel.app/'/>
+                        <PortoTemp src={TheEvent} desc='Conference Template' link='https://application-on-bootstrap-4.vercel.app/'/>
                 </div>
             </div>
         </PortofolioSection>
