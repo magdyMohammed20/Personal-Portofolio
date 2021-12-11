@@ -1,21 +1,18 @@
 import styled from 'styled-components'
+import Colors from '../../aids/Colors'
 
-const mainColor = '#111827';
-const mainColor2 = '#050b19';
-const secondColor = '#cdb78e';
+const { mainColor, secondColor, btnColor1 } = Colors
 
 export const SkillsSection = styled.div`
-    background-color: ${mainColor}
+    background-color: ${secondColor}
 `;
 
 export const Div = styled.div`
     transition: all .3s linear;
-    &:hover{
-        background-color: ${mainColor2}
-    }
+    background-color: ${btnColor1};
 
     &:hover > img{
-        animation: pulse .6s ease;
+        animation: pulse .4s ease;
     }
 
     @keyframes pulse{
@@ -38,5 +35,5 @@ export const Div = styled.div`
 `;
 
 export const H1 = styled.h1`
-    color: ${secondColor}
+    color: ${mainColor}
 `;
