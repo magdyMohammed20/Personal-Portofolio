@@ -1,10 +1,10 @@
 import styled from 'styled-components'
+import Colors from '../../aids/Colors'
 
-const mainColor = '#111827';
-const mainColor2 = '#cdb78e';
+const { mainColor, secondColor, overlayColor, whiteColor } = Colors
 
 export const PortofolioSection = styled.div`
-    background-color: ${mainColor}
+    background-color: ${secondColor}
 `;
 
 export const Div = styled.div`
@@ -17,7 +17,8 @@ export const Div = styled.div`
         top: 50%;
         left: 50%;
         transform: translate(-50% , -50%) scale(0);
-        background-color: ${mainColor2};
+        color: ${whiteColor};
+        background-color: ${mainColor};
         z-index: 11;
         transition: all .2s linear;
     }
@@ -29,7 +30,7 @@ export const Div = styled.div`
         left: 0;
         bottom: 0;
         right: 0;
-        background-color: #1f2937d6;
+        background-color: ${overlayColor};
         z-index: 10;
         transition: all .4s linear;
         opacity: 0
