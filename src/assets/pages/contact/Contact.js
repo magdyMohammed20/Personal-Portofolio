@@ -1,5 +1,5 @@
 import React from 'react'
-import {ContactSection , Span} from './Styles'
+import { ContactSection, Span, Anchor } from './Styles'
 import ContactTemp from './ContactTemp'
 
 function Contact() {
@@ -11,11 +11,17 @@ function Contact() {
                     <h2 className='text-3xl text-white font-bold'>GET IN TOUCH</h2>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-center">
-                    <ContactTemp icon='fa fa-phone fa-2x' name1='phone' desc='01012935745'/>
-                    
-                    <ContactTemp icon='fa fa-map-marker fa-2x' name1='address' desc='cairo'/>
-                    <ContactTemp icon='fa fa-envelope fa-2x' name1='email' desc='magdymohammed96@yahoo.com'/>
+                    <ContactTemp icon='fa fa-phone fa-2x' name1='phone' desc='01012935745' />
+                    <ContactTemp icon='fa fa-map-marker fa-2x' name1='address' desc='cairo' />
+                    <ContactTemp icon='fa fa-envelope fa-2x' name1='email' desc='magdymohammed96@yahoo.com' />
                 </div>
+
+                <ul className='flex justify-center mt-12'>
+                    <li className='mx-3'><Anchor href='https://www.facebook.com/profile.php?id=100002594931715' target='_blank' className='shadow bg-gray-800 w-12 h-12 flex items-center justify-center rounded-sm'><i className="fa fa-facebook text-white" aria-hidden="true"></i></Anchor></li>
+                    <li className='mx-3'><Anchor href='https://twitter.com/magdymo26260007' target='_blank' className='shadow bg-gray-800 w-12 h-12 flex items-center justify-center rounded-sm'><i className="fa fa-twitter text-white" aria-hidden="true"></i></Anchor></li>
+                    <li className='mx-3'><Anchor href='https://www.instagram.com/magdyMohammed20/' target='_blank' className='shadow bg-gray-800 w-12 h-12 flex items-center justify-center rounded-sm'><i className="fa fa-instagram text-white" aria-hidden="true"></i></Anchor></li>
+                    <li className='mx-3'><Anchor href='https://github.com/magdyMohammed20' target='_blank' className='shadow bg-gray-800 w-12 h-12 flex items-center justify-center rounded-sm'><i className="fa fa-github-alt text-white" aria-hidden="true"></i></Anchor></li>
+                </ul>
             </div>
         </ContactSection>
     )
