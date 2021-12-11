@@ -1,10 +1,9 @@
 import styled from 'styled-components'
-import home from '../../images/Home/home4.jpg'
-import {Link } from 'react-router-dom'
+import home from '../../images/Home/home.jpg'
+import { Link } from 'react-router-dom'
+import Colors from '../../aids/Colors'
 
-const mainColor = '#111827';
-const secondColor = '#FB839E';
-
+const { mainColor, whiteColor, overlayColor, blackColor } = Colors
 export const HomeSection = styled.div`
     
     z-index: 2;
@@ -17,27 +16,19 @@ export const HomeSection = styled.div`
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #1f2937b8;
+        background-color: ${overlayColor};
         z-index: -1
     }
 `;
 
 export const AboutBtn = styled(Link)`
     background-color: ${mainColor};
-    color: ${secondColor};
+    color: ${whiteColor};
     transition: all .4s linear;
 
     &:hover{    
-        background-color: #cdb78e;
-        color: #2b1266
+        background-color: ${whiteColor};
+        color: ${blackColor}
     }
 `;
 
-export const Img = styled.img`
-    width: 500px;
-    height: 500px;
-    -webkit-filter: invert(16%) sepia(80%);
-    filter: invert(16%) sepia(80%);
-    z-index: -1;
-}
-`;

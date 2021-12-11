@@ -1,7 +1,7 @@
 import styled from 'styled-components'
+import Colors from '../../aids/Colors'
 
-const mainColor = '#111827';
-const secondColor = '#cdb78e';
+const { mainColor, whityBorder, overlayColor, navColor, navColorHover, whiteColor } = Colors
 
 export const RouterParent = styled.div`
 
@@ -9,12 +9,12 @@ export const RouterParent = styled.div`
         left: -100%;
         top: 0;
         bottom: 0;
-        background-color: ${mainColor};
+        background-color: ${navColor};
         width: 250px; 
-        border-right: 3px solid ${secondColor};
+        border-right: 1px solid ${whityBorder};
         position: fixed;
         z-index: 999;
-        transition: all .4s ease;
+        transition: all .2s ease;
 
         &.open{
             left: 0 !important;
@@ -26,30 +26,13 @@ export const RouterParent = styled.div`
     
         a{
             display: block;
-            padding: 14px 12px;
-            color: #FFF;
-            position: relative;
-            z-index: 2;
-            transition: all .2s linear;
-            &::after{
-                content: '';
-                position: absolute;
-                left: -100%;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                background-color: ${secondColor};
-                z-index: -1;
-                transition: all .2s linear;
-            }
-            
-            &:hover::after{
-                left: 0
-            }
+            padding: 20px 15px;
+            color: ${whiteColor};
+            transition: all .2s linear;            
 
             &:hover{
                 color: ${mainColor};
-                padding-left: 20px !important;
+                background-color: ${navColorHover}
             }
         }
     }
@@ -58,8 +41,8 @@ export const RouterParent = styled.div`
         z-index: 998;
         right: 15px;
         top: 15px;
-        background-color: ${secondColor};
-        border-radius: 100%;
+        background-color: ${mainColor};
+        border-radius: 5px;
         width: 50px;
         height: 50px;
     }
@@ -67,7 +50,7 @@ export const RouterParent = styled.div`
 
 export const Overlay = styled.div`
     position: fixed;
-    background-color: rgba(0,0,0,.5);
+    background-color: ${overlayColor};
     top: 0; 
     right: 0;
     left: 0;

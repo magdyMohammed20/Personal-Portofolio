@@ -1,18 +1,18 @@
-import React , {useState} from 'react'
-import {BrowserRouter , Route , Link, Switch} from 'react-router-dom'
+import React, { useState } from 'react'
+import { BrowserRouter, Route, Link, Switch } from 'react-router-dom'
 import Home from '../../pages/home/Home'
 import About from '../../pages/about/About'
 import Skills from '../../pages/skills/Skills'
 import Portofolio from '../../pages/portofolio/Portofolio'
 import Contact from '../../pages/contact/Contact'
-import {RouterParent , Overlay} from './Style'
+import { RouterParent, Overlay } from './Style'
 
 
 
 function Router() {
 
-    let [toggled , setToggled] = useState(false)
-    let [overlay , setOverlay] = useState(false)
+    let [toggled, setToggled] = useState(false)
+    let [overlay, setOverlay] = useState(false)
 
     let toggleNav = () => {
         setToggled(!toggled)
@@ -27,7 +27,7 @@ function Router() {
         */
     }
 
-    
+
     return (
         <BrowserRouter>
             <RouterParent>
@@ -43,19 +43,19 @@ function Router() {
                 </nav>
 
                 <Switch>
-                    <Route exact path='/'><Home/></Route>
-                    <Route path='/about'><About/></Route>
-                    <Route path='/skills'><Skills/></Route>
+                    <Route exact path='/'><Home /></Route>
+                    <Route path='/about'><About /></Route>
+                    <Route path='/skills'><Skills /></Route>
                     {/* <Route path='/services'><Services/></Route> */}
-                    <Route path='/portofolio'><Portofolio/></Route>
-                    <Route path='/contact'><Contact/></Route>
+                    <Route path='/portofolio'><Portofolio /></Route>
+                    <Route path='/contact'><Contact /></Route>
                 </Switch>
 
                 <button className='fixed humb' onClick={() => toggleNav()}>
-                    <i className="fa fa-bars text-black" aria-hidden="true"></i>
+                    <i className="fa fa-bars text-white" aria-hidden="true"></i>
                 </button>
 
-                <Overlay className={overlay ? 'block' : 'hidden' }></Overlay>
+                <Overlay className={overlay ? 'block' : 'hidden'}></Overlay>
             </RouterParent>
         </BrowserRouter>
     )
