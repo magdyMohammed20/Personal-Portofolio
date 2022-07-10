@@ -11,11 +11,11 @@ import Countries from '../../images/Portofolio/countries.PNG'
 function Portofolio() {
     return (
         <PortofolioSection className='p-8 h-auto'>
-            <div className='container px-6 mt-8 mx-auto'>
+            <div className='container px-6 mt-12 mx-auto'>
                 <div className='text-center'>
-                    <h2 className='text-3xl text-white font-bold'>LATEST WORKS</h2>
+                    <h2 className='text-2xl text-white font-bold'>LATEST WORKS</h2>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 mt-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 mt-12">
                     <PortoTemp src={Bright} desc='Bright Template' link='https://bright-nine.vercel.app/' />
                     <PortoTemp src={Education} desc='Educational Template' link='https://educational-template.vercel.app/' />
                     <PortoTemp src={NewEvent} desc='Event Template' link='https://events-template.vercel.app/' />

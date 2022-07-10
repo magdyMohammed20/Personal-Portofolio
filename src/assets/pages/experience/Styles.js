@@ -3,8 +3,8 @@ import Colors from '../../aids/Colors'
 
 const { mainColor, secondColor, navColor } = Colors
 
-export const ContactSection = styled.div`
-    background-color: ${secondColor}
+export const ExperienceSection = styled.div`
+    background-color: ${secondColor};
 `;
 
 

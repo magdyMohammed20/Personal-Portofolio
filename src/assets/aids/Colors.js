@@ -1,5 +1,4 @@
-
-export default {
+const colors = {
     mainColor: '#68c185',
     secondColor: '#101116',
     transparentSecColor: '#272b36ab',
@@ -11,6 +10,8 @@ export default {
     btnColor1: '#1f2937',
     blackColor: '#2b1266'
 }
+
+export default colors
 
 
 /*

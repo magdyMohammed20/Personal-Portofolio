@@ -1,14 +1,19 @@
 import React from 'react'
-import { AboutSection, Span, Anchor, Btn } from './Styles'
+import { AboutSection, Btn } from './Styles'
+import { Anchor } from '../../aids/style/globalStyle'
 import myImg from '../../images/Personal/33.png'
 
 function About() {
     return (
         <AboutSection className='p-8'>
             <div className='container px-6'>
-                <div className='text-center'>
-                    <Span>MAIN INFO</Span>
-                    <h2 className='text-3xl text-white font-bold'>ABOUT ME</h2>
+                <div className='text-center mt-12'>
+                    {
+                        /*
+                        
+                        <Span>MAIN INFO</Span>*/
+                    }
+                    <h2 className='text-2xl text-white font-bold'>ABOUT ME</h2>
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-2">
                     <div className='flex justify-center hidden lg:flex flex-col'>
