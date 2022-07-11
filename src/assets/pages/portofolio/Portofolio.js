@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { PortofolioSection } from './Styles'
 import PortoTemp from './PortoTemp'
 import Bright from '../../images/Portofolio/Bright.PNG'
@@ -7,10 +7,21 @@ import NewEvent from '../../images/Portofolio/NewEvent.PNG'
 import Tailwind from '../../images/Portofolio/Tailwind.PNG'
 import TheEvent from '../../images/Portofolio/TheEvent.PNG'
 import Countries from '../../images/Portofolio/countries.PNG'
+import { LoadingOverlay } from '../../aids/style/globalStyle'
 
 function Portofolio() {
+    const [isLoading, setIsLoading] = useState(true)
+
+    useEffect(() => {
+        setIsLoading(false)
+    }, [])
     return (
         <PortofolioSection className='p-8 h-auto'>
+            {
+                isLoading && <LoadingOverlay>
+                    Loading...
+                </LoadingOverlay>
+            }
             <div className='container px-6 mt-12 mx-auto'>
                 <div className='text-center'>
                     <h2 className='text-2xl text-white font-bold'>LATEST WORKS</h2>

@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { LoadingOverlay } from '../../aids/style/globalStyle'
 import SkillTemp from './SkillTemp'
 import { SkillsSection, H1 } from './Styles'
 import html from '../../images/skills/html.png'
@@ -21,8 +22,20 @@ import prettier from '../../images/skills/prettier.png'
 import eslint from '../../images/skills/eslint.svg'
 import github from '../../images/skills/github.png'
 function Skills() {
+
+    const [isLoading, setIsLoading] = useState(true)
+
+    useEffect(() => {
+        setIsLoading(false)
+    }, [])
     return (
         <SkillsSection className='p-8'>
+
+            {
+                isLoading && <LoadingOverlay>
+                    Loading...
+                </LoadingOverlay>
+            }
             <div className='container px-6 mx-auto'>
                 <div className='text-center mt-12'>
                     <h2 className='text-2xl text-white font-bold'>MY SKILLS</h2>

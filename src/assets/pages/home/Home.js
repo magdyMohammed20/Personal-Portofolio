@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { LoadingOverlay } from '../../aids/style/globalStyle'
 import { HomeSection, AboutBtn } from './Styles'
 import myImg from '../../images/Personal/comp.png'
+
 function Home() {
+    const [isLoading, setIsLoading] = useState(true)
+
+    useEffect(() => {
+        setIsLoading(false)
+    }, [])
     return (
         <HomeSection className='bg-cover bg-center h-screen relative'>
+            {
+                isLoading && <LoadingOverlay>
+                    Loading...
+                </LoadingOverlay>
+            }
             <div className='container px-6'>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                     <div className=" h-screen flex content-center flex-wrap">

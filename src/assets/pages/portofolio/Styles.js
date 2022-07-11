@@ -8,7 +8,7 @@ export const PortofolioSection = styled.div`
 `;
 
 export const Div = styled.div`
-
+    background-color: #191b22;
     img{
         filter: grayscale(35%);
     }

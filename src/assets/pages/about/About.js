@@ -1,11 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { LoadingOverlay } from '../../aids/style/globalStyle'
 import { AboutSection, Btn } from './Styles'
 import { Anchor } from '../../aids/style/globalStyle'
 import myImg from '../../images/Personal/33.png'
 
 function About() {
+    const [isLoading, setIsLoading] = useState(true)
+
+    useEffect(() => {
+        setIsLoading(false)
+    }, [])
     return (
         <AboutSection className='p-8'>
+            {
+                isLoading && <LoadingOverlay>
+                    Loading...
+                </LoadingOverlay>
+            }
             <div className='container px-6'>
                 <div className='text-center mt-12'>
                     {

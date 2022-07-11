@@ -1,11 +1,16 @@
 
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { LoadingOverlay } from '../../aids/style/globalStyle'
 import { ExperienceSection } from './Styles'
 import ExperienceTemp from './components/ExperienceTemp'
 import digifi from '../../images/experience/digifi.png'
 import mostaql from '../../images/experience/mostaql.png'
 function Experience() {
+    const [isLoading, setIsLoading] = useState(true)
 
+    useEffect(() => {
+        setIsLoading(false)
+    }, [])
     const allComps = [
         {
             id: 1,
@@ -30,6 +35,12 @@ function Experience() {
     ]
     return (
         <ExperienceSection className='p-8 h-auto lg:h-screen'>
+
+            {
+                isLoading && <LoadingOverlay>
+                    Loading...
+                </LoadingOverlay>
+            }
             <div className='container mx-auto px-6'>
                 <div className='text-center mt-12'>
                     <h2 className='text-2xl text-white font-bold'>My Experience</h2>

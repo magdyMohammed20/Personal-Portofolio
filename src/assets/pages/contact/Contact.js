@@ -1,11 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { LoadingOverlay } from '../../aids/style/globalStyle'
 import { ContactSection } from './Styles'
 import { Anchor } from '../../aids/style/globalStyle'
 import ContactTemp from './ContactTemp'
 
 function Contact() {
+    const [isLoading, setIsLoading] = useState(true)
+
+    useEffect(() => {
+        setIsLoading(false)
+    }, [])
     return (
         <ContactSection className='p-8 h-auto lg:h-screen'>
+            {
+                isLoading && <LoadingOverlay>
+                    Loading...
+                </LoadingOverlay>
+            }
             <div className='container mx-auto px-6'>
                 <div className='text-center mt-12'>
                     {
