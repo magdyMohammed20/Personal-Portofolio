@@ -36,12 +36,39 @@ function Router() {
             <RouterParent>
                 <nav className={toggled ? "open" : ''}>
                     <ul>
-                        <li><Link to='/'>home</Link></li>
-                        <li><Link to='/about'>about</Link></li>
-                        <li><Link to='/skills'>skills</Link></li>
-                        <li><Link to='/experience'>experience</Link></li>
-                        <li><Link to='/portofolio'>portofolio</Link></li>
-                        <li><Link to='/contact'>contact</Link></li>
+                        <li><Link to='/'>
+                            <i className="fa fa-home mr-3"></i>
+                            home
+                        </Link>
+                        </li>
+                        <li><Link to='/about'>
+                            <i className="fa fa-user mr-3"></i>
+                            about
+                        </Link>
+                        </li>
+                        <li><Link to='/skills'>
+                            <i className="fa fa-star mr-3"></i>
+                            skills
+                        </Link>
+                        </li>
+                        <li>
+                            <Link to='/experience'>
+                                <i className="fa fa-cogs mr-3"></i>
+                                experience
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/portofolio'>
+                                <i className="fa fa-briefcase mr-3"></i>
+                                portofolio
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/contact'>
+                                <i className="fa fa-envelope mr-3"></i>
+                                contact
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
 
