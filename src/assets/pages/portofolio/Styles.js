@@ -1,14 +1,15 @@
 import styled from 'styled-components'
 import Colors from '../../aids/Colors'
 
-const { mainColor, secondColor, overlayColor, whiteColor } = Colors
+const { mainColor, navColor,experienceColor, overlayColor, whiteColor } = Colors
 
 export const PortofolioSection = styled.div`
-    background-color: ${secondColor}
+    background-color: ${navColor}
 `;
 
 export const Div = styled.div`
-    background-color: #191b22;
+    background-color: ${experienceColor};
+    border-radius: 10px;
     img{
         filter: grayscale(35%);
     }

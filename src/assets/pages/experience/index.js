@@ -3,9 +3,10 @@ import React, { useState, useEffect } from 'react'
 import { LoadingOverlay } from '../../aids/style/globalStyle'
 import { ExperienceSection } from './Styles'
 import ExperienceTemp from './components/ExperienceTemp'
-import digifi from '../../images/experience/digifi.png'
+import leadsmart from '../../images/experience/leadsmart.png'
 import mostaql from '../../images/experience/mostaql.png'
 import asset from '../../images/experience/asset.jpg'
+import samvalley from '../../images/experience/samvalley.jpeg'
 
 function Experience() {
     const [isLoading, setIsLoading] = useState(true)
@@ -26,13 +27,13 @@ function Experience() {
         },
         {
             id: 2,
-            name: 'DigiFi Network',
+            name: 'LeadsMart',
             role: 'Front End Developer',
-            compImg: digifi,
+            compImg: leadsmart,
             startDate: '04/04/2022',
             endDate: '16/02/2023',
-            width: '4em',
-            height: '3.2em'
+            width: '3em',
+            height: '3em'
         },
         {
             id: 3,
@@ -40,6 +41,16 @@ function Experience() {
             role: 'Software Engineer',
             compImg: asset,
             startDate: '20/02/2023',
+            endDate: '',
+            width: '3.5em',
+            height: '3.5em'
+        },
+        {
+            id: 4,
+            name: 'SamValley',
+            role: 'Senior Front End Developer',
+            compImg: samvalley,
+            startDate: '06/03/2024',
             endDate: '',
             width: '3.5em',
             height: '3.5em'
@@ -60,7 +71,7 @@ function Experience() {
                 </div>
 
 
-                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-10 mt-16'>
 
                     {
                         allComps.map(({ id, name, role, compImg, startDate, endDate, width, height }) => <ExperienceTemp

@@ -1,15 +1,15 @@
 import styled from 'styled-components'
 import Colors from '../../aids/Colors'
 
-const { mainColor, secondColor, btnColor1 } = Colors
+const { mainColor, navColor, experienceColor } = Colors
 
 export const SkillsSection = styled.div`
-    background-color: ${secondColor}
+    background-color: ${navColor}
 `;
 
 export const Div = styled.div`
     transition: all .3s linear;
-    background-color: ${btnColor1};
+    background-color: ${experienceColor};
 
     &:hover > img{
         animation: pulse .4s ease;

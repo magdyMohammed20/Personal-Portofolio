@@ -7,6 +7,8 @@ import NewEvent from '../../images/Portofolio/NewEvent.PNG'
 import Tailwind from '../../images/Portofolio/Tailwind.PNG'
 import TheEvent from '../../images/Portofolio/TheEvent.PNG'
 import Countries from '../../images/Portofolio/countries.PNG'
+import TailwindApp from '../../images/Portofolio/tailwindapp.png'
+
 import { LoadingOverlay } from '../../aids/style/globalStyle'
 
 function Portofolio() {
@@ -33,6 +35,8 @@ function Portofolio() {
                     <PortoTemp src={Tailwind} desc='Tailwind Template' link='https://tailwind-react-template.vercel.app/' />
                     <PortoTemp src={TheEvent} desc='Conference Template' link='https://application-on-bootstrap-4.vercel.app/' />
                     <PortoTemp src={Countries} desc='React Countries API' link='https://621d5b2171ee2e52b98616d9--competent-lichterman-f484dd.netlify.app/' />
+                    <PortoTemp src={TailwindApp} desc='TailwindCss App' link='https://basic-tailwindcss-with-react.vercel.app/' />
+
                 </div>
             </div>
         </PortofolioSection>

@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 import Colors from '../../aids/Colors'
 
-const { mainColor, secondColor, btnColor1, whiteColor } = Colors
+const { mainColor, navColor, btnColor1, whiteColor } = Colors
 
 export const AboutSection = styled.div`
     height: 100vh;
-    background-color: ${secondColor}
+    background-color: ${navColor}
 `;
 
 export const Btn = styled.a`

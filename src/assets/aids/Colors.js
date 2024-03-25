@@ -1,14 +1,15 @@
 const colors = {
-    mainColor: '#68c185',
+    mainColor: '#2e82fe',
     secondColor: '#101116',
     transparentSecColor: '#272b36ab',
-    navColor: '#272b36',
-    navColorHover: '#414752',
-    overlayColor: 'rgb(40 43 52 / 86%)',
+    navColor: '#10172a',
+    navColorHover: '#20304e61',
+    overlayColor: '#10172afa',
     whiteColor: '#FFF',
     whityBorder: '#7e7e7e',
-    btnColor1: '#1f2937',
-    blackColor: '#2b1266'
+    btnColor1: '#2e82fe',
+    blackColor: '#2b1266',
+    experienceColor: "#1a243fc7"
 }
 
 export default colors

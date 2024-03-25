@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 import Colors from '../../aids/Colors'
 
-const { mainColor, secondColor, navColor } = Colors
+const { mainColor, navColor } = Colors
 
 export const ExperienceSection = styled.div`
-    background-color: ${secondColor};
+    background-color: ${navColor};
 `;
 
 
