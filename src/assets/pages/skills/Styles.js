@@ -4,7 +4,8 @@ import Colors from '../../aids/Colors'
 const { mainColor, navColor, experienceColor } = Colors
 
 export const SkillsSection = styled.div`
-    background-color: ${navColor}
+    background-color: ${navColor};
+    min-height: 100vh
 `;
 
 export const Div = styled.div`

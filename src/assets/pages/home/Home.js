@@ -12,7 +12,7 @@ function Home() {
         setIsLoading(false)
     }, [])
     return (
-        <HomeSection className='bg-cover bg-center h-screen relative'>
+        <HomeSection className='bg-cover flex justify-center bg-center h-screen relative'>
             {
                 isLoading && <LoadingOverlay>
                     Loading...

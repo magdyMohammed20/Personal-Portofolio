@@ -25,6 +25,8 @@ import materialUI from '../../images/skills/material_ui.png'
 import materialTable from '../../images/skills/material_table.svg'
 import reactFilestack from '../../images/skills/react_filestack.svg'
 import vuejs from '../../images/skills/vue.png'
+import vuetify from '../../images/skills/vuetify.png'
+import nextjs from '../../images/skills/next.png'
 
 function Skills() {
 
@@ -53,12 +55,12 @@ function Skills() {
                     <SkillTemp src={html} skillName={'HTML'} opClass='w-12' />
                     <SkillTemp src={css} skillName={'CSS'} opClass='w-12' />
                     <SkillTemp src={js} skillName={'Js'} opClass='w-12' />
-                    <SkillTemp src={bootstrap} skillName={'BOOTSTRAP'} opClass='w-12' />
-                    <SkillTemp src={pug} skillName={'PUGJS'} opClass='w-12' />
-                    <SkillTemp src={sass} skillName={'SASS'} opClass='w-12' />
+                    <SkillTemp src={bootstrap} skillName={'BOOTSTRAP'} />
+                    <SkillTemp src={pug} skillName={'PUGJS'} />
+                    <SkillTemp src={sass} skillName={'SASS'} />
                     <SkillTemp src={react} skillName={'REACTJS'} opClass='w-12' />
-                    <SkillTemp src={formik} skillName={'FORMIK'} opClass='w-12' />
-                    <SkillTemp src={tailwind} skillName={'TAILWIND'} opClass='w-16' />
+                    <SkillTemp src={formik} skillName={'FORMIK'}  />
+                    <SkillTemp src={tailwind} skillName={'TAILWIND'}  />
                     <SkillTemp src={redux} skillName={'REDUX'} opClass='w-12' />
                     <SkillTemp src={storybook} skillName={'STORYBOOK'} opClass='w-12' />
                     <SkillTemp src={reactTable} skillName={'REACT TABLE'} opClass='w-12' />
@@ -67,6 +69,8 @@ function Skills() {
                     <SkillTemp src={materialTable} skillName={'MATERIAL TABLE'} opClass='w-12' />
                     <SkillTemp src={reactFilestack} skillName={'REACT FILESTACK'} opClass='w-16' />
                     <SkillTemp src={vuejs} skillName={'VUEJS'} opClass='w-12' />
+                    <SkillTemp src={vuetify} skillName={'VUETIFY'} opClass='w-12' />
+                    <SkillTemp src={nextjs} skillName={'NEXTJS'}  />
 
                     
                 </div>

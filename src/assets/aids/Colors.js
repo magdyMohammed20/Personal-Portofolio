@@ -4,7 +4,7 @@ const colors = {
     transparentSecColor: '#272b36ab',
     navColor: '#10172a',
     navColorHover: '#20304e61',
-    overlayColor: '#10172afa',
+    overlayColor: '#10172af2',
     whiteColor: '#FFF',
     whityBorder: '#7e7e7e',
     btnColor1: '#2e82fe',

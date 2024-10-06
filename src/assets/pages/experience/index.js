@@ -7,6 +7,9 @@ import leadsmart from '../../images/experience/leadsmart.png'
 import mostaql from '../../images/experience/mostaql.png'
 import asset from '../../images/experience/asset.jpg'
 import samvalley from '../../images/experience/samvalley.jpeg'
+import amanah from '../../images/experience/amanah.jpeg'
+import matrix from '../../images/experience/matrix.svg'
+import asad from '../../images/experience/asad.jpeg'
 
 function Experience() {
     const [isLoading, setIsLoading] = useState(true)
@@ -51,10 +54,41 @@ function Experience() {
             role: 'Senior Front End Developer',
             compImg: samvalley,
             startDate: '06/03/2024',
+            endDate: '06/10/2024',
+            width: '3.5em',
+            height: '3.5em'
+        },
+        {
+            id: 5,
+            name: 'Amanah Teknologia',
+            role: 'Senior UI Developer',
+            compImg: amanah,
+            startDate: '20/03/2024',
             endDate: '',
             width: '3.5em',
             height: '3.5em'
-        }
+        },
+        {
+            id: 6,
+            name: 'Asad Holding',
+            role: 'Senior UI Developer',
+            compImg: asad,
+            startDate: '01/09/2024',
+            endDate: '',
+            width: '3.5em',
+            height: '3.5em'
+        },
+        {
+            id: 7,
+            name: 'Matrix',
+            role: 'Vuejs Front End Developer',
+            compImg: matrix,
+            startDate: '26/09/2024',
+            endDate: '',
+            width: '3.5em',
+            height: '3.5em'
+        },
+        
     ]
     return (
         <ExperienceSection className='p-8 h-auto lg:h-screen'>
