@@ -14,8 +14,12 @@ function ExperienceTemp({ id, name, compImg, startDate, endDate = '', width, hei
                     {role}
                 </div>
                 <div className='text-gray-500 text-sm mt-1 italic'>
-                    {startDate} {
-                        endDate ? `- ${endDate}` : `(Present)`
+                    {startDate}
+                    
+                    {
+                        endDate ? `- ${endDate}` : <>
+                        <span className='font-bold text-green-600'> (Present)</span>
+                        </>
                     }
                 </div>
                 {
