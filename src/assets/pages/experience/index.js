@@ -8,8 +8,8 @@ import mostaql from '../../images/experience/mostaql.png'
 import asset from '../../images/experience/asset.jpg'
 import samvalley from '../../images/experience/samvalley.jpeg'
 import amanah from '../../images/experience/amanah.jpeg'
-import matrix from '../../images/experience/matrix.svg'
-import asad from '../../images/experience/asad.jpeg'
+//import matrix from '../../images/experience/matrix.svg'
+//import asad from '../../images/experience/asad.jpeg'
 
 function Experience() {
     const [isLoading, setIsLoading] = useState(true)
@@ -68,7 +68,7 @@ function Experience() {
             width: '3.5em',
             height: '3.5em'
         },
-        {
+        /* {
             id: 6,
             name: 'Asad Holding',
             role: 'Senior UI Developer',
@@ -87,7 +87,7 @@ function Experience() {
             endDate: '',
             width: '3.5em',
             height: '3.5em'
-        },
+        }, */
         
     ]
     return (
